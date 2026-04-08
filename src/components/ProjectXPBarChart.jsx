@@ -59,7 +59,6 @@ const ProjectXPBarChart = ({ transactions }) => {
     </div>
   );
 };
-C:\Users\Custom_PC\Desktop\01-Dashboard-main\src
 // Prop  
 ProjectXPBarChart.propTypes = {
   transactions: PropTypes.arrayOf(
