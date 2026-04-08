@@ -1,0 +1,15 @@
+export const RadarSkills = (data) =>
+  data.map(({ subject, ...rest }) => ({
+    ...rest,
+    subject: subject.replace(/^skill_/, ""), 
+  }));
+  
+export const getAuditRatioInfo = (ratio) => {
+if (ratio >= 1.5){ 
+	return { color: "green", message: "Awesome, buddy!" };
+}else if (ratio >= 1){
+ return { color: "yellow", message: "Keep it up, buddy!" };
+}else{
+  return { color: "red", message: "Careful buddy!" };
+}
+};

@@ -1,0 +1,58 @@
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.info-card {
+    padding: 1rem;
+    border-radius: 8px;
+    color: #ffffff;
+    justify-items: center;
+}
+
+.info-label {
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+.info-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+    .info-grid {
+        display: flex !important;
+        /* Force flexbox layout */
+        flex-direction: column !important;
+        /* Stack items vertically */
+        gap: 10px !important;
+        /* Add spacing between items */
+        width: 100%;
+        /* Ensure no overflow */
+        padding: 0 !important;
+        /* Remove extra padding */
+        margin: 0 auto;
+        /* Center the grid */
+        box-sizing: border-box;
+        /* Include padding/border in width */
+    }
+
+    .info-card {
+        width: 100% !important;
+        /* Ensure cards take full width */
+        box-sizing: border-box;
+        /* Include padding and border in the width */
+        padding: 0.8rem !important;
+        /* Adjust padding for smaller screens */
+        font-size: 0.85rem !important;
+        /* Adjust font size */
+    }
+}

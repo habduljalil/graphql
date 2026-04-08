@@ -1,0 +1,49 @@
+/* ============================= */
+/* RADAR CHART CONTAINER */
+/* ============================= */
+
+.radar-chart-container {
+
+    padding: 1.5rem;
+    color: #dcdde1;
+    backdrop-filter: blur(5px); /* Adds a slight blur behind the container for a modern, ethereal look */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.radar-chart-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(111, 0, 255, 0.4); /* Glowing effect on hover */
+}
+
+/* ============================= */
+/* RADAR CHART TITLE STYLES */
+/* ============================= */
+
+
+
+/* ============================= */
+/* TOOLTIP STYLING (if needed) */
+/* ============================= */
+
+/* Optional: To customize tooltips if you use charts like Recharts */
+.recharts-tooltip-wrapper {
+    outline: none;
+}
+
+.recharts-default-tooltip {
+    background-color: #2a2a40 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px 14px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.recharts-tooltip-label {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+.recharts-tooltip-item {
+    color: #ff6347 !important; /* Highlight item in orange */
+    font-weight: 500;
+}

@@ -1,0 +1,42 @@
+/* src/styles/ErrorPage.css */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #111122, #1a1a35);
+    /* Match app theme */
+    color: #ffffff;
+    text-align: center;
+}
+
+.error-title {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    color: #5532b4;
+}
+
+.error-message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #dcdde1;
+}
+
+.error-link {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #e74c3c;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin: 2rem;
+}
+
+.error-link:hover {
+    background-color: #e74c3c;
+    color: #ffffff;
+}

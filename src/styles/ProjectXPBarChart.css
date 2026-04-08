@@ -1,0 +1,77 @@
+/* ============================= */
+/* RADAR CHART CONTAINER */
+/* ============================= */
+
+.radar-chart-container {
+ 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+/* ============================= */
+/* TITLE STYLING */
+/* ============================= */
+
+
+
+/* ============================= */
+/* TOOLTIP STYLING */
+/* ============================= */
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.recharts-default-tooltip {
+  background-color: #2a2a40 !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.recharts-tooltip-label {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.recharts-tooltip-item {
+  color: #ff6347 !important;
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(255, 99, 71, 0.6);
+}
+
+/* ============================= */
+/* AXIS AND GRID STYLING */
+/* ============================= */
+
+/* Axis text */
+.recharts-cartesian-axis-tick-value {
+  fill: #c7c7c7;
+  font-size: 12px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Grid lines */
+.recharts-cartesian-grid line {
+  stroke: rgba(255, 255, 255, 0.08);
+}
+
+/* ============================= */
+/* RESPONSIVE STYLING */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .radar-chart-container {
+    padding: 16px;
+  }
+
+  
+
+  .recharts-tooltip-wrapper {
+    font-size: 0.9rem;
+    /* Slightly adjust tooltip text for mobile */
+  }
+}

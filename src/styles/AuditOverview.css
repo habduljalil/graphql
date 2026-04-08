@@ -1,0 +1,38 @@
+.audit-ratio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.audit-ratio-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bolda;
+    color: #ffffff;
+}
+
+.audit-ratio-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.audit-message {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+
+.audit-tooltip .tooltip-item {
+    color: #dcdde1;
+}
+
+.audit-tooltip .tooltip-label {
+    color: #ffffff;
+}

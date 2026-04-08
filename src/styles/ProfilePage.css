@@ -1,0 +1,207 @@
+/* ============================= */
+/* SOLO LEVELING THEME */
+/* ============================= */
+
+/* Global Styles */
+body {
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f0f1a 0%, #050510 60%, #000000 100%);
+    color: #e6e6ff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Profile Container */
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: rgba(20, 20, 40, 0.6);
+    backdrop-filter: blur(8px);
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.profile-header {
+    grid-column: span 3;
+    text-align: center;
+    border-radius: 12px;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    background: linear-gradient(145deg, #111122, #1a1a35);
+    
+    text-transform: uppercase;
+}
+
+/* ============================= */
+/* INFORMATION SECTION */
+/* ============================= */
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.info-card {
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(30, 30, 60, 0.6);
+  
+    transition: all 0.3s ease-in-out;
+    color: #e0e6ff;
+    word-wrap: break-word;
+     border: 2px solid #5532b4;
+    border-radius: 5px;
+}
+
+.info-card:hover ,.audit-status-item:hover{
+   
+   border-color: #e0e6ff;
+}
+
+/* Labels */
+.info-label {
+    font-size: 0.85rem;
+    color: #8ab4ff;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* ============================= */
+/* GENERAL CARD STYLES */
+/* ============================= */
+
+.profile-card,
+.xp-chart-container,
+.audit-overview-container,
+.radar-chart-container,
+.transactions-container,
+.audit-status-container,
+.radar-chart-container,
+.profile-information {
+    background: linear-gradient(145deg, #111122, #1a1a35);
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: #dcdcff;
+    transition: 0.3s ease;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    color: #dcdde1;
+}
+
+.profile-card:hover,
+.xp-chart-container:hover,
+.audit-overview-container:hover,
+.radar-chart-container:hover,
+.transactions-container:hover,
+.audit-status-container:hover,
+.radar-chart-container:hover,
+.profile-information:hover  {
+    box-shadow: 0 0 30px rgba(111, 0, 255, 0.6);
+}
+
+/* ============================= */
+/* SECTION TITLES */
+/* ============================= */
+
+.audit-overview-title,
+.audit-status-title,
+.radar-chart-title,
+.information-title
+ {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: rgba(111, 0, 255, 0.6);
+    text-shadow: 0 0 10px rgba(113, 82, 165, 0.8);
+    letter-spacing: 1px;
+}
+
+/* ============================= */
+/* TRANSACTIONS */
+/* ============================= */
+
+.transactions-list {
+    max-height: 550px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+/* Custom Scrollbar */
+.transactions-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.transactions-list::-webkit-scrollbar-thumb {
+    background: linear-gradient(#6f00ff, #0099ff);
+    border-radius: 10px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .profile-header {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .info-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-card {
+        padding: 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .info-card {
+        padding: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .profile-card,
+    .xp-chart-container,
+    .audit-overview-container,
+    .radar-chart-container,
+    .transactions-container,
+    .audit-status-container {
+        padding: 0.8rem;
+    }
+}
